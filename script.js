@@ -13,7 +13,7 @@ btnAll.addEventListener('click', function() {
 
 btnNew.addEventListener('click', function() {
     messageEl.textContent = "";
-    renderList(filterByStatus(emps, "New"));
+    renderList(filterByStatus(emps, "new"));
 });
 
 btnSort.addEventListener('click', function() {
@@ -28,5 +28,5 @@ btnStats.addEventListener('click', function() {
         `Всего записей: ${stats.totalCount}\n` +
         `Сумма value: ${stats.sumValue}\n` +
         `Максимум value: ${stats.maxValue}\n` +
-        `Количество status="New": ${stats.newCount}`;
+        `Количество status="new": ${stats.newCount}`;
 });
