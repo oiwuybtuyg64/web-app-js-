@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Система Список сотрудников</h1>
 
-<section>
-    <h2>Список сотрудников</h2>
-    <p>Форма будет реализована в следующих лабораторных работах</p>
-</section>
+            <h1> Список сотрудников </h1>
 
-<section>
-    <h2>Список сотрудников</h2>
-    <p>Отображение данных будет добавлено позже</p>
-        <div>
-            <button id="btnAll">Показать всех сотрудников</button>
-            <button id="btnNew">Показать только NEW</button>
-            <button id="btnStats">Показать статистику</button>
-        </div>
+            <section>
+                <h2>Список сотрудников</h2>
+                <p>Форма будет реализована в следующих лабораторных работах</p>
+            </section>
 
-        <pre id="output"></pre>
-</section>
-<script src="script.js"></script>
+            <section>
+                <h2>Список сотрудников</h2>
+                <p>Отображение данных будет добавлено позже</p>
+
+                <div>
+                    <button id="btnAll">Показать все</button>
+                    <button id="btnNew">Показать NEW</button>
+                    <button id="btnSort">Сортировать по value ↓</button>
+                    <button id="btnStats">Показать статистику</button>
+                </div>
+                <div id="list"></div>
+                <div id="message"></div>
+            </section>
+
+    <script src="data.js"></script>
+    <script src="logic.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
