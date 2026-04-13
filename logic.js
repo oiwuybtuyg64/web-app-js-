@@ -43,7 +43,7 @@ function buildStats(items) {
     acc.totalCount += 1;
     acc.sumValue += item.value;
     if (item.value > acc.maxValue) acc.maxValue = item.value;
-    if (item.status === "New") acc.newCount += 1;
+    if (item.status === "new") acc.newCount += 1;
     return acc;
   }, { totalCount: 0, sumValue: 0, maxValue: 0, newCount: 0 });
 }
